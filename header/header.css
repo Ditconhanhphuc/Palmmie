@@ -76,6 +76,7 @@ body {
     vertical-align: baseline;
     background-color: #fff;
     /* border-bottom: 2px solid #81d8d0; */
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
 }
 
 .header::after {
@@ -107,10 +108,11 @@ body {
 .header__navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__navbar {
-    padding: 16px 24px;
+    padding: 12px 24px 0px;
     /* border-top: 4px solid #81d8d0; */
     background: #fff;
     z-index: 101;
@@ -132,49 +134,61 @@ body {
     margin-top: 4px;
 }
 
-/* Search bar button */
-.search-bar {
+/* Search new */
+.navbar-item__search {
+    position: relative;
+    cursor: pointer;
+}
+
+.header__searchBox {
+    position: absolute;
+    right: -100%;
+    /* left: 0; */
     width: 100%;
-    height: 300px;
-    display: none;
-    position: fixed;
-    top: 103px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 80%;
     background-color: #fff;
-    padding: 10px 104px 0; /* Sử dụng một lần duy nhất */
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
-    z-index: 9999;
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+    margin-top: -14px;
+    transition: 0.5s ease-in-out;
 }
 
-.search-bar.show {
-    display: block;
+.header__searchBox.active {
+    right: 0;
 }
 
-.search-bar input {
-    width: 200px; /* Điều chỉnh chiều rộng tùy theo nhu cầu */
-    padding: 5px;
-    margin-right: 5px;
-}
-
-.search-bar span {
-    font-size: 20px;
-}
-
-.search-bar .input-search {
-    border: none;
-    border-bottom: 1px solid #000;
+.header__searchBox input {
+    width: 100%;
+    border: #98c7e8 ;
     outline: none;
+    height: 50px;
+    color: #5e5e5e;
+    font-size: 18px;
+    background: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.search-input-icon {
-    padding-top: 38px;
+.searchBtn {
+    position: relative;
+    transition: 0.5s ease-in-out;
 }
 
+.closeBtn {
+    opacity: 0;
+    visibility: hidden;
+}
 
-.search-input-icon i {
-    padding-left: 0px;
-    font-size: 14px;
+.searchBtn.active {
+    left: 0;
+}
+
+.closeBtn.active {
+    font-size: 23px;
+    opacity: 1;
+    visibility: visible;
+    transform: 0.5s;
+    cursor: pointer;
 }
 
 .header__navbar-item {
@@ -225,7 +239,7 @@ body {
 
 .header__navbar-item:hover,
 .header__navbar-item-link:hover {
-    color: #009384;
+    color: #c48c94;
     opacity: 1;
     transition: color 0.3s, opacity 0.3s;
     cursor: pointer;
@@ -360,8 +374,9 @@ img {
 }
 
 .subnav {
+    padding-left: 70px;
     position: absolute;
-    left: 80px;
+    left: 25px;
     top: 27px;
     background-color: #fff;
     z-index: 101;
@@ -516,4 +531,202 @@ a.cta .cta-content .cta-text {
     border: 0;
     font-weight: 400;
     font-style: normal;
+}
+
+
+/* Responsive-menu */
+/* .menu-Toggle {
+    position: relative;
+    display: none;
+}
+
+@media (max-width: 800px) 
+{
+    .searchBtn {
+        left: 10px;
+    }
+    .menu-Toggle {
+        position: absolute;
+        display: block;
+        font-size: 1em;
+        left: 0;
+        cursor: pointer;
+        transform: translateX(30px);
+    }
+    
+    .overlay .main-nav {
+        /* opacity: 0; 
+        visibility: hidden;
+        left: 100%;
+    }
+    header.open .main-nav{
+        /* position: absolute; 
+        padding-left: 14px;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        background-color: #fff;
+        width: 100%;
+        height: calc(100vh - 80px);
+    }
+
+} */
+
+/* Nav-mobile */
+.nav__bars-btn {
+    margin-right: 14px;
+    width: 24px;
+    /* height: 28px; */
+    display: none;
+    
+}
+
+.nav_overlay {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+
+.nav__mobile {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+}
+
+.nav__mobile-list {
+    padding: 0 16px;
+    margin-top: 52px;
+}
+
+.nav__mobile__link-container {
+    margin: 0 14px;
+    margin-bottom: 14px;
+    margin-right: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+.nav__mobile__link {
+    text-decoration: none;
+    color: #5e5e5e;
+    display: inline-block;
+    padding-bottom: 14px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav_mobile-close {
+    width: 28px;
+    height: 28px;
+    font-size: 2rem;
+    color: #5e5e5e;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+    /* .shopify-section {
+        margin-top: 76px;
+    } */
+    
+    .header {
+        height: 76px;
+    }
+
+    .nav__bars-btn {
+        display: block;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .nav__mobile.active{
+        transform: translateX(0)
+    }
+
+    .nav_overlay.active {
+        display: block;
+    }
+
+    .user-icon {
+        display: none;
+    }
+
+    .wishlist-icon {
+        display: none;
+    }
+
+    .header__searchBox {
+        padding: 0 40px;
+    }
+}
+
+/* Shopping bag */
+.header__cart {
+    position: relative;
+
+}
+
+.header__cart:hover .header__cart-list{
+    display: flex;
+}
+
+/* mui ten tu nua hinh vuong */
+.header__cart-list::after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: -34px;
+    border-width: 20px 24px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.header__cart-list {
+    position: fixed;
+    top: calc(100% + 8px);
+    right: 18px;
+    background-color: #fff;
+    width: 350px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 3.125rem 0px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.header__cart-list-empty {
+    padding: 18px 0;
+}
+
+.header__cart-empty-img {
+    width: 54%;
+}
+
+.header__cart-list-empty-msg {
+    margin: 0;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #5e5e5e;
 }

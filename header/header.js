@@ -15,26 +15,61 @@ window.addEventListener("scroll", function() {
 }, false);
 
 // Header mo thi man hinh sau mo
-document.addEventListener("DOMContentLoaded", function() {
-  const mainNavLinks = document.querySelectorAll('.main-nav__link');
-  const bodyFooter = document.querySelectorAll('main, footer');
+// document.addEventListener("DOMContentLoaded", function() {
+//   const mainNavLinks = document.querySelectorAll('.main-nav__link');
+//   const bodyFooter = document.querySelectorAll('main, footer');
 
-  mainNavLinks.forEach(link => {
-      link.addEventListener('mouseenter', () => {
-          // Thêm lớp hidden-body-footer vào body và footer khi hover vào main-nav__link
-          bodyFooter.forEach(element => {
-              element.classList.add('hidden-body-footer');
-          });
-      });
+//   mainNavLinks.forEach(link => {
+//       link.addEventListener('mouseenter', () => {
+//           // Thêm lớp hidden-body-footer vào body và footer khi hover vào main-nav__link
+//           bodyFooter.forEach(element => {
+//               element.classList.add('hidden-body-footer');
+//           });
+//       });
 
-      link.addEventListener('mouseleave', () => {
-        // Loại bỏ lớp hidden-body-footer khi không hover nữa
-        bodyFooter.forEach(element => {
-            element.classList.remove('hidden-body-footer');
-        });
-    });
-  });
-});
+//       link.addEventListener('mouseleave', () => {
+//         // Loại bỏ lớp hidden-body-footer khi không hover nữa
+//         bodyFooter.forEach(element => {
+//             element.classList.remove('hidden-body-footer');
+//         });
+//     });
+//   });
+// });
+
+// Search new
+let searchBtn = document.querySelector('.searchBtn');
+let closeBtn = document.querySelector('.closeBtn');
+let searchBox = document.querySelector('.header__searchBox')
+
+searchBtn.onclick = function() {
+    searchBox.classList.add('active');
+    closeBtn.classList.add('active');
+    searchBtn.classList.add('active');
+}
+closeBtn.onclick = function() {
+    searchBox.classList.remove('active');
+    closeBtn.classList.remove('active');
+    searchBtn.classList.remove('active');
+    
+}
+
+// Responsive-menu
+let mobileClose = document.querySelector('.nav_mobile-close');
+let navMobile = document.querySelector('.nav__mobile')
+let navOverlay = document.querySelector('.nav_overlay')
+let navBarBtn = document.querySelector('.nav__bars-btn')
+
+navBarBtn.onclick = function() {
+    navMobile.classList.add('active');
+    navOverlay.classList.add('active');
+    // mobileClose.classList.add('active');
+}
+
+mobileClose.onclick = function () {
+    navMobile.classList.remove('active');
+    navOverlay.classList.remove('active');
+}
+
 
 // Search bar button 
 document.addEventListener("DOMContentLoaded", function() {

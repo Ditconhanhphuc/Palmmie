@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log in</title>
+        <link rel="stylesheet" href="../header/header.css">
+        <link rel="stylesheet" href="../header/header.js">
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.5.2/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header header--fix">
+        <!-- <div class="grid"> -->
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <div class="header__navbar-item">
+                        <!-- Nav-mobile -->
+                        <div class="nav__bars-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <!-- icon tim kiem -->
+                        <li class="header__navbar-item">
+                            <div class="navbar-item__search">
+                                <i class="fa-solid fa-magnifying-glass searchBtn"></i>
+                                <!-- <i class="fa-solid fa-xmark closeBtn"></i> -->
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <a href="http://127.0.0.1:5500/landingPage/landingPage.html">
+                    <img class="header__navbar-logo" src="../assets/img/logo-palmmie.png" alt="">
+                </a>
+                <ul class="header__navbar-list">
+                    <!-- Sign in/up -->
+                    <li class="header__navbar-item">
+                        <div class="header__navbar-item-link user-icon">
+                            <a href="http://127.0.0.1:5500/signIn.html">
+                                <i class="fa-regular fa-user"></i></a>
+                        </div>
+                    </li>
+                    <!-- gio hang/sp yeu thich -->
+                    <li class="header__navbar-item wishlist-icon">
+                        <a href="" class="header__navbar-item-link"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <!-- Shoping bag -->
+                    <li class="header__navbar-item header__cart">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="fa-solid fa-bag-shopping  header__cart-icon"></i>
+                        </a>
+                        <div class="header__cart-list header__cart-list-empty">
+                            <img src="../assets/img/empty-cart.png" alt="" class="header__cart-empty-img">
+                            <p class="header__cart-list-empty-msg">Your cart is empty</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        <!-- </div> -->
+        <!-- Category Shopping Nav -->
+        <div class="overlay">
+            <nav class="main-nav nav_pc">
+                <ul class="nav-list">
+                    <!-- New Arrivals -->
+                    <li class="main-nav__link-container">
+                        <a href="http://127.0.0.1:5500/salePage.html" class="underline-transition main-nav__link">NEW ARRIVALS</a>
+                    </li>
+    
+                    <!-- Best Sellers -->
+                    <li class="main-nav__link-container">
+                        <a href="" class="main-nav__link underline-transition">BEST SELLERS</a>
+                    </li>
+                    <!-- SHOP -->
+                    <li  class="main-nav__link-container">
+                        <a href="http://127.0.0.1:5500/salePage.html" class="main-nav__link underline-transition">SHOP</a>
+                        <div class="subnav">
+                            <div class="subnav__inner">
+                                <!-- Featured -->
+                                <div class="subnav__group">
+                                    <h3>FEATURED</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Sweet Like Honey</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Big Effing Clips®</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Sweetheart Clips</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Orchid Bloom Clips</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Archived Styles</span>
+                                                </span>
+                                            </a>
+                                        </li>   
+                                    </ul>
+                                </div>
+                                
+                                <!-- Haircare -->
+                                <div class="subnav__group">
+                                    <h3>HAIRCARE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Angelstick™</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Hair Brushes</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Styling Brushes</span>
+                                                </span>
+                                            </a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                                
+                                <!-- HAIR ACCESSORIES -->
+                                <div class="subnav__group">
+                                    <h3>HAIR ACCESSORIES</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Claw Clips</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Headbands</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Hair Pins</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Bows and Barrettes</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Scrunchies</span>
+                                                </span>
+                                            </a>
+                                        </li>   
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Knotted Hair Ties</span>
+                                                </span>
+                                            </a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                                <!-- EXCLUSIVES -->
+                                <div class="subnav__group">
+                                    <h3>EXCLUSIVES</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Angelstick™</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Angel Ashtray</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Totes + Pouches</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Stickers</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Palmmie lady -->
+                    <li class="main-nav__link-container">
+                        <a href="" class="main-nav__link underline-transition">PALMMIE LADY</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Search box -->
+        <div class="header__searchBox">
+            <input type="text" placeholder="Search our store">
+            <i class="fa-solid fa-xmark closeBtn"></i>
+        </div>
+
+        <div class="nav_overlay"></div>
+        <!-- Mobile nav-->
+        <nav class="nav__mobile">
+            <div class="nav_mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="nav__mobile-list">
+                <!-- Landing Page -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Landing Page</a>
+                </li>
+                <!-- New Arrival -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">New Arrival</a>
+                </li>
+                <!-- Shopping -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Shop</a>
+                </li>
+                <!-- Wishlist -->
+                <li  class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Wishlist</a>
+                </li>
+                <!-- Palmmie Lady -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Palmmie Lady</a>
+                </li>
+                <!-- Log in  -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Log in</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        .content {
+            margin-top: 108px;
+            padding-bottom: 60px;
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            background: #fff; /* #cfe0ec */
+        }
+        .login-register-form {
+            display: flex;
+        }
+        .login-form {
+            width: 50%;
+        }
+        .login-form__title {
+            text-align: center;
+        }
+        .login-form__title h2 {
+            font-size: 24px;
+        }
+        .login-form__title p {
+            padding-top: 6px;
+            position: relative;
+            width: 64%;
+            left: 18%;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        fieldset {
+            position: relative;
+            border: none;
+            padding: 20px 0;
+            width: 70%;
+            left: 15%;
+        }
+        .label-sign-in {
+            font-size: 14px;
+        }
+        .sign-in__pass-input, .sign-in__email-input {
+            display: block;
+            width: 100%;
+            height: 40px;
+            margin-top: 3px;
+            margin-bottom: 20px;
+            padding: 6px 10px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border: 1px solid #000;
+            font-size: 16px;
+            cursor: pointer;
+            transition: width 0.3s ease;
+            font-family: "Fraunces", serif;
+            outline: none;
+        }
+        .signin-button--input, .signup-button--input {
+            display: block;
+            width: 100%;
+            height: 46px;
+            margin-top: 45px;
+            margin-bottom: 30px;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: width 0.3s ease;
+        }
+        .create-account,
+        .forgot-password {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .register-form {
+            width: 50%;
+        }
+        .register-form__title h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .register-form__title p {
+            text-align: center;
+            padding-top: 6px;
+            position: relative;
+            width: 64%;
+            left: 18%;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .register-form__des > ul {
+            padding: 0 30px;
+        }
+        .register-form__des {
+            font-size: 13px;
+            padding-top: 26px;
+            width: 70%;
+            left: 15%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .register-form__des > ul > li {
+            padding: 8px 0;
+            list-style: circle;
+            /* display: table; */
+        }
+    </style>
+    <!-- Content -->
+    <div class="content">
+        <div class="login-register-form">
+            <div class="login-form">
+                <div class="login-form__title">
+                    <h2>Log in</h2>
+                    <p>Sign-in to view your recent purchases or wishlist and manage your personal details and preferences here.</p>
+                </div>
+                <fieldset>
+                    <div class="sign-in__input email-input">
+                        <!-- <input type="email" id="email" onfocus="this.placeholder='';" onblur="if (this.value === '') {this.placeholder='Email'} else {previousValue = this.value}">
+                        <span></span>  -->
+                        <label class="label-sign-in" for="Email"> Email</label>
+                        <input type="email" class="sign-in__email-input" maxlength="70" size="16">
+                    </div>
+                    <div class="sign-in__input">
+                        <label class="label-sign-in" for="text"> Password</label>
+                        <input type="text" class="sign-in__pass-input" maxlength="12" size="16">
+                    </div>
+                    <button class="signin-button--input" type="submit">Sign In</button>
+                    <div><a class="forgot-password underline-transition" href="">Forgot your password?</a></div>
+                    <div>
+                        <a class="create-account underline-transition" href="http://127.0.0.1:5500/Bản%20sao%20Bijou/signUp/signUp.html">
+                            <span>Create an Account?</span>
+                        </a>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="register-form">
+                <div class="register-form__title">
+                    <h2>Join the Palmmie Club</h2>
+                    <p>Be in the know with the Palmmie Club!</p>
+                    <div class="register-form__des">
+                        <h3>Create an account to:</h3>
+                        <ul>
+                            <li>Benefit from exclusive access to pre-sale</li>
+                            <li>Stay on top of trends and new collection drops</li>
+                            <li>Receive invites to VIP events</li>
+                        </ul>
+                        <button class="signin-button--input" type="submit">Join the club</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The palmmie experience -->
+    <div class="experience">
+        <div class="experience__heading">
+            <h2>The Palmmie Experience</h2>
+        </div>
+        <div class="experience__service-content">
+            <!-- Book an appointment -->
+            <div class="service-content__item">
+                <div class="service-content__icon">
+                    <img width="36px" src="../assets/img/icon/ICON_Appointment.svg" alt="">
+                </div>
+                <div class="service-content__title">
+                    <h3>Book an appointment</h3>
+                </div>
+                <div class="experience__service-text">
+                    <p>We are pleased to assist you 24/7 to book an virtual appointment</p>
+                </div>
+                <div class="experience__service-link">
+                    <a href="">
+                        <span class="underline-transition">Book now</span>
+                    </a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <!-- Bijou at your service -->
+            <div class="service-content__item">
+                <div class="service-content__icon">
+                    <img width="36px" src="../assets/img/icon/ICON_Concierge.svg" alt="">
+                </div>
+                <div class="service-content__title">
+                    <h3>Palmmie at your service</h3>
+                </div>
+                <div class="experience__service-text">
+                    <p>Our client care experts always pleased to assist</p>
+                </div>
+                <div class="experience__service-link">
+                    <a href="http://127.0.0.1:5500/Bản%20sao%20Bijou/contactUs.html">
+                        <span class="underline-transition">Contact now</span>
+                    </a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+             </div>
+            <!-- Complimentary Shipping & Return -->
+            <div class="service-content__item">
+                <div class="service-content__icon">
+                    <img width="36px" src="../assets/img/icon/ship.png" alt="">
+                </div>
+                <div class="service-content__title">
+                    <h3>Complimentary Shipping & Return</h3>
+                </div>
+                <div class="experience__service-text">
+                    <p>We offer complimentary shipment & returns on all Bijou orders</p>
+                </div>
+                <div class="experience__service-link">
+                    <a href="http://127.0.0.1:5500/faq.html">
+                        <span class="underline-transition">Learn more</span>
+                    </a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <!-- Wishing & Gifting -->
+            <div class="service-content__item">
+                <div class="service-content__icon">
+                    <img width="36px" src="../assets/img/icon/gift.png" alt="">
+                </div>
+                <div class="service-content__title">
+                    <h3>Wishing & Gifting</h3>
+                </div>
+                <div class="experience__service-text">
+                    <p>Your happiness our priority</p>
+                </div>
+                <div class="experience__service-link">
+                    <a href="http://127.0.0.1:5500/Bản%20sao%20Bijou/giftPage.html">
+                        <span class="underline-transition">Explore now</span>
+                    </a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__title-item">
+            <div class="footer__title-content">
+                <h3>KEEP IN TOUCH</h3>
+                <p>Join us for exclusive updates, sales, behind the scenes, events and more.</p>
+                <div class="footer__title-item--input"> 
+                    <input class="footer__title-item--input-email " type="email" placeholder="Enter Your Email ">
+                    <button class="footer__title-item--input-btn" type="submit">SUBSCRIBE</button>
+                </div> </div>
+        </div>
+        <div class="grid">
+            <div class="grid__row">
+                <div class="footer__title">
+                </div>
+                <div class="grid__col-4">
+                    <h3 class="footer__heading">EXTRAS</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Our Story</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Palmmie Lady</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="grid__col-3">
+                    <h3 class="footer__heading">INFO</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link">Our Story</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link">Palmmie Lady</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="grid__col-4">
+                    <h3 class="footer__heading">SUPPORT</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Contact</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Store Locator</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__col-4">
+                    <h3 class="footer__heading">CONNECT</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Instagram</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Facebook</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Tiktok</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__title-item-footer">
+            <p class="footer__small-text">© 2024 Palmmie</p>
+        </div>
+    </footer>
+</body>
+<script src="../header/header.js"></script>
+<script src="../script_main.js"></script>
+</html>

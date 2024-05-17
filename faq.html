@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frequently Asked Questions</title>
+        <link rel="stylesheet" href="../header/header.css">
+        <link rel="stylesheet" href="../header/header.js">
+        <link rel="stylesheet" href="../assets/css/base.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.5.2/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header header--fix">
+        <!-- <div class="grid"> -->
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <div class="header__navbar-item">
+                        <!-- Nav-mobile -->
+                        <div class="nav__bars-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <!-- icon tim kiem -->
+                        <li class="header__navbar-item">
+                            <div class="navbar-item__search">
+                                <i class="fa-solid fa-magnifying-glass searchBtn"></i>
+                                <!-- <i class="fa-solid fa-xmark closeBtn"></i> -->
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+                <a href="http://127.0.0.1:5500/landingPage/landingPage.html">
+                    <img class="header__navbar-logo" src="../assets/img/logo-palmmie.png" alt="">
+                </a>
+                <ul class="header__navbar-list">
+                    <!-- Sign in/up -->
+                    <li class="header__navbar-item">
+                        <div class="header__navbar-item-link user-icon">
+                            <a href="http://127.0.0.1:5500/signIn.html">
+                                <i class="fa-regular fa-user"></i></a>
+                        </div>
+                    </li>
+                    <!-- gio hang/sp yeu thich -->
+                    <li class="header__navbar-item wishlist-icon">
+                        <a href="" class="header__navbar-item-link"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <!-- Shoping bag -->
+                    <li class="header__navbar-item header__cart">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="fa-solid fa-bag-shopping  header__cart-icon"></i>
+                        </a>
+                        <div class="header__cart-list header__cart-list-empty">
+                            <img src="../assets/img/empty-cart.png" alt="" class="header__cart-empty-img">
+                            <p class="header__cart-list-empty-msg">Your cart is empty</p>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        <!-- </div> -->
+        <!-- Category Shopping Nav -->
+        <div class="overlay">
+            <nav class="main-nav nav_pc">
+                <ul class="nav-list">
+                    <!-- New Arrivals -->
+                    <li class="main-nav__link-container">
+                        <a href="http://127.0.0.1:5500/salePage.html" class="underline-transition main-nav__link">NEW ARRIVALS</a>
+                    </li>
+    
+                    <!-- Best Sellers -->
+                    <li class="main-nav__link-container">
+                        <a href="" class="main-nav__link underline-transition">BEST SELLERS</a>
+                    </li>
+                    <!-- SHOP -->
+                    <li  class="main-nav__link-container">
+                        <a href="http://127.0.0.1:5500/salePage.html" class="main-nav__link underline-transition">SHOP</a>
+                        <div class="subnav">
+                            <div class="subnav__inner">
+                                <!-- Featured -->
+                                <div class="subnav__group">
+                                    <h3>FEATURED</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Sweet Like Honey</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Big Effing Clips®</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Sweetheart Clips</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Orchid Bloom Clips</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Archived Styles</span>
+                                                </span>
+                                            </a>
+                                        </li>   
+                                    </ul>
+                                </div>
+                                
+                                <!-- Haircare -->
+                                <div class="subnav__group">
+                                    <h3>HAIRCARE</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Angelstick™</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Hair Brushes</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Styling Brushes</span>
+                                                </span>
+                                            </a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                                
+                                <!-- HAIR ACCESSORIES -->
+                                <div class="subnav__group">
+                                    <h3>HAIR ACCESSORIES</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Claw Clips</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Headbands</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Hair Pins</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Bows and Barrettes</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Scrunchies</span>
+                                                </span>
+                                            </a>
+                                        </li>   
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Knotted Hair Ties</span>
+                                                </span>
+                                            </a>
+                                        </li> 
+                                    </ul>
+                                </div>
+                                <!-- EXCLUSIVES -->
+                                <div class="subnav__group">
+                                    <h3>EXCLUSIVES</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Angelstick™</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Angel Ashtray</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Totes + Pouches</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="cta-content">
+                                                    <span class="cta-context underline-transition">Stickers</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Palmmie lady -->
+                    <li class="main-nav__link-container">
+                        <a href="" class="main-nav__link underline-transition">PALMMIE LADY</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Search box -->
+        <div class="header__searchBox">
+            <input type="text" placeholder="Search our store">
+            <i class="fa-solid fa-xmark closeBtn"></i>
+        </div>
+
+        <div class="nav_overlay"></div>
+        <!-- Mobile nav-->
+        <nav class="nav__mobile">
+            <div class="nav_mobile-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="nav__mobile-list">
+                <!-- Landing Page -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Landing Page</a>
+                </li>
+                <!-- New Arrival -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">New Arrival</a>
+                </li>
+                <!-- Shopping -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Shop</a>
+                </li>
+                <!-- Wishlist -->
+                <li  class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Wishlist</a>
+                </li>
+                <!-- Palmmie Lady -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Palmmie Lady</a>
+                </li>
+                <!-- Log in  -->
+                <li class="nav__mobile__link-container">
+                    <a href="" class="nav__mobile__link">Log in</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>Frequently Asked Questions</h2>
+            <style>
+                .content {
+                    padding-top: 40px;
+                    max-width: 80%;
+                    margin: auto;
+                }
+                .content h2 {
+                    font-size: 27px;
+                    text-align: center;
+                    margin-top: 110px;
+                    padding-bottom: 30px;
+                    letter-spacing: 2px;
+                    font-family: "Fraunces", serif;
+                }
+                .faq {
+                    margin: 25px 0;
+                    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+                }
+                .faq__question {
+                    background-color: #fff;
+                    color: rgba(0, 0, 0, 0.9);
+                    cursor: pointer;
+                    font-size: 16px;
+                    width: 100%;
+                    padding: 10px 0;
+                    border: none;
+                    outline: none;
+                    transition: 0.4s;
+                    letter-spacing: 0.8px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .faq__question:hover {
+                    background-color: #f9f9f9;
+                }
+                .faq_answer {
+                    font-size: 14px;
+                    margin: 20px 0;
+                    padding: 0 18px;
+                    background-color: #f9f9f9;
+                    display: none;
+                    line-height: 1.8;
+                }
+                .faq_answer p {
+                    margin-top: 28px;
+                }
+                .faq_answer-title {
+                    font-weight: bold;
+                }
+                .faq_answer ul li {
+                    list-style-type: disc;
+                }
+                /* .faq.active {
+
+                } */
+                .faq_answer a:hover {
+                    text-decoration: underline;
+                }
+                </style>
+
+        <!-- Question 1 -->
+        <div class="faq active">
+            <button class="faq__question">
+                What shipping options are available on Palmmie.com?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p>For each address within the Ho Chi Minh city, the following charges apply:</p>
+                <p class="faq_answer-title">Standard Shipping: free </p>
+                <p>Available on all orders under 500 000 VND. Please allow 3-5 business days to receive your items. Items ordered together may not always ship together.</p>
+                <p class="faq_answer-title">Express Shipping with signature on delivery: free </p>
+                <p>Available on all orders above 500 000 VND. Please allow 1-2 business days to receive your items. Items ordered together may not always ship together.</p>
+                <p class="faq_answer-title">Next-day delivery: 20 000 VND, (complimentary for orders above 500 000 VND)</p>
+                <ul>
+                    <li>Orders placed before 3:00PM EST Monday through Friday will be delivered on the following day.</li>
+                    <li>Orders placed on Saturday before 1:00PM EST will be delivered Monday. </li>
+                </ul>
+                <p class="faq_answer-title">NYC Scheduled Delivery (Signature Required) - Same Day delivery slot available
+                </p>
+                <ul>
+                    <li>Orders placed before 1:00PM EST Monday through Saturday will be available for delivery on the same day.</li>
+                    <li>Orders placed after 1:00PM EST Monday through Sunday will be available for delivery on the following day. </li>
+                    <li>Holiday delivery is not available.</li>
+                    <li>Complimentary on all orders above 500 000 VND.</li>
+                    <li>20 000 VND on all orders below 500 000 VND.</li>
+                </ul>
+                <a href="http://127.0.0.1:5500/Bản%20sao%20Bijou/contactUs.html">View Customer Service Hours</a>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq active">
+            <button class="faq__question">
+                How can I make returns or exchanges?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p class="faq_answer-title">What products are eligible for returns?</p>
+                <p>Products are accepted for credit or exchange in the U.S. within 30 days of purchase. All merchandise must be in perfect saleable condition, with the sales receipt. Exclusions apply, please note:</p>
+                <ul>
+                    <li>Merchandise under 500 000 VND will be accepted for return or exchange within 30 days of purchase.</li>
+                    <li>Merchandise 500 000 VND or more will be eligible for exchange within 30 days of purchase. No refunds will be issued for purchases above 500 000d.</li>
+                    <li>Merchandise must be accompanied by all original packaging for a refund. Including jewelry boxes and pouches.</li>
+                    <li>Certain limited edition and collaboration merchandise may be ineligible for a refund.</li>
+                </ul>
+                <p class="faq_answer-title">What will my refund look like?</p>
+                <ul>
+                    <li class="faq_answer-title">For online/phone purchases: </li>
+                    <span>Credit or charge card purchases will receive a credit to the original cardholder’s account on which the purchase was made. If a credit or charge card has been used to make this purchase, the terms and conditions in the agreement between the cardholder and the issuer of that credit card shall also apply.</span>    
+                    <li class="faq_answer-title">For in-store purchases:</li>
+                    <span>Refunds will be made to the original form of payment. Refunds will be provided only for purchases by cash or check to the original purchaser; credit or charge card purchases will receive a credit to the original cardholder’s account on which the purchase was made. If a credit or charge card has been used to make this purchase, the terms and conditions in the agreement between the cardholder and the issue of that credit card shall also apply. Refunds for purchases by check will be issued by company mail check upon presentation of the sales receipt and only if the funds have been received by Bijou.</span>
+                </ul>
+                
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq active">
+            <button class="faq__question">
+                Can I track my online order?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p>A shipping notification with tracking details will be sent via email after your order has shipped. You will receive multiple email acknowledgements if your order results in more than one shipment.</p>
+                </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq active">
+            <button class="faq__question">
+                How much does it cost to repair my Palmmie item?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p>The cost to repair a Tiffany product varies and is determined after an assessment is made by one of our repair professionals. Repair pricing varies based on the type of product, material and/or gemstone. When the assessment is complete, we will send you a free estimate. </p>
+                </p>
+                </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq active">
+            <button class="faq__question">
+                How can I schedule a consultation with a Palmmie Expert?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p>We offer a variety of ways to get in touch with a Expert, including online chat, by phone and in-store consultations.</p>
+                </p>
+                </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="faq active">
+            <button class="faq__question">
+                Can I change my shipping address after I’ve placed my order?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p>Yes, as long as your order has not shipped. Please contact us to make any modifications to your order.</p>
+                </div>
+        </div>
+
+        <!-- Question 7 -->
+        <!-- <div class="faq active">
+            <button class="faq__question">
+                What if I need to return my engagement ring?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p>All engagement rings, may be returned for up to 30 days from the date of original purchase for refund, credit or exchange. The engagement ring must be in saleable condition, include all product documentation (e.g. Bijou Diamond Certificate, or Colored Stone or Diamond reports) and be accompanied by a sales receipt.</p>
+                <p>To make a return, please use the complimentary shipping label provided with your package and drop it off at the nearest FedEx location. You may also return your engagement ring at any Bijou retail store in the country of purchase.</p>
+                </div>
+        </div> -->
+
+        <!-- Question 8 -->
+        <div class="faq active">
+            <button class="faq__question">
+                How long does a Palmmie order take to ship?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p>Please allow 3-5 business days for Palmmie items to be shipped. Items ordered together may not always ship together.</p>
+                </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="faq active">
+            <button class="faq__question">
+                Will my Palmmie purchase arrive gift-wrapped?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq_answer">
+                <p>All Palmmie.com purchases arrive in the signature Palmmie Box, tied with a white satin ribbon. At the checkout process you will have the option of writing a gift message for each item in your order which will arrive with your gift package, enclosed in a white envelope. If you choose not to write a gift message, one blank card per recipient will be included in your order.</p>
+                </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__title-item">
+            <div class="footer__title-content">
+                <h3>KEEP IN TOUCH</h3>
+                <p>Join us for exclusive updates, sales, behind the scenes, events and more.</p>
+                <div class="footer__title-item--input"> 
+                    <input class="footer__title-item--input-email " type="email" placeholder="Enter Your Email ">
+                    <button class="footer__title-item--input-btn" type="submit">SUBSCRIBE</button>
+                </div> </div>
+        </div>
+        <div class="grid">
+            <div class="grid__row">
+                <div class="footer__title">
+                </div>
+                <div class="grid__col-4">
+                    <h3 class="footer__heading">EXTRAS</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Our Story</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Palmmie Lady</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="grid__col-3">
+                    <h3 class="footer__heading">INFO</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link">Our Story</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link">Palmmie Lady</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="grid__col-4">
+                    <h3 class="footer__heading">SUPPORT</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Contact</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Store Locator</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__col-4">
+                    <h3 class="footer__heading">CONNECT</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Instagram</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Facebook</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer-item-link underline-transition">Tiktok</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__title-item-footer">
+            <p class="footer__small-text">© 2024 Palmmie</p>
+        </div>
+    </footer>
+</body>
+<script src="../header/header.js"></script>
+<script src="../script_main.js"></script>
+<script>
+    var acc = document.getElementsByClassName("faq__question");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function (){
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+
+            var answer = this.nextElementSibling;
+
+            if (answer.style.display === "block") {
+                answer.style.display = "none"; 
+            }else {
+                answer.style.display = "block";
+            }
+        })
+    }
+</script>
+</html>
