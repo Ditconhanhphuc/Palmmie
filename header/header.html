@@ -26,9 +26,16 @@
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
                         <div class="header__navbar-item">
+                            <!-- Nav-mobile -->
+                            <div class="nav__bars-btn">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
                             <!-- icon tim kiem -->
                             <li class="header__navbar-item">
-                                <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                                <div class="navbar-item__search">
+                                    <i class="fa-solid fa-magnifying-glass searchBtn"></i>
+                                    <!-- <i class="fa-solid fa-xmark closeBtn"></i> -->
+                                </div>
                             </li>
                         </div>
                     </ul>
@@ -41,21 +48,26 @@
                             </div>
                         </li>
                         <!-- gio hang/sp yeu thich -->
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item wishlist-icon">
                             <a href="" class="header__navbar-item-link"><i class="fa-regular fa-heart"></i></a>
                         </li>
                         <!-- Shoping bag -->
-                        <li class="header__navbar-item">
-                            <a href="" class="header__navbar-item-link"><i class="fa-solid fa-bag-shopping"></i></a>
+                        <li class="header__navbar-item header__cart">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="fa-solid fa-bag-shopping  header__cart-icon"></i>
+                            </a>
+                            <div class="header__cart-list header__cart-list-empty">
+                                <img src="../assets/img/empty-cart.png" alt="" class="header__cart-empty-img">
+                                <p class="header__cart-list-empty-msg">Your cart is empty</p>
+                            </div>
                         </li>
                     </ul>
                 </nav>
             <!-- </div> -->
-        
             <!-- Category Shopping Nav -->
             <div class="overlay">
-                <nav class="main-nav">
-                    <ul>
+                <nav class="main-nav nav_pc">
+                    <ul class="nav-list">
                         <!-- New Arrivals -->
                         <li class="main-nav__link-container">
                             <a href="" class="underline-transition main-nav__link">NEW ARRIVALS</a>
@@ -232,7 +244,46 @@
                     </ul>
                 </nav>
             </div>
-        
+
+            <!-- Search box -->
+            <div class="header__searchBox">
+                <input type="text" placeholder="Search our store">
+                <i class="fa-solid fa-xmark closeBtn"></i>
+            </div>
+
+            <div class="nav_overlay"></div>
+            <!-- Mobile nav-->
+            <nav class="nav__mobile">
+                <div class="nav_mobile-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="nav__mobile-list">
+                    <!-- Landing Page -->
+                    <li class="nav__mobile__link-container">
+                        <a href="" class="nav__mobile__link">Landing Page</a>
+                    </li>
+                    <!-- New Arrival -->
+                    <li class="nav__mobile__link-container">
+                        <a href="" class="nav__mobile__link">New Arrival</a>
+                    </li>
+                    <!-- Shopping -->
+                    <li class="nav__mobile__link-container">
+                        <a href="" class="nav__mobile__link">Shop</a>
+                    </li>
+                    <!-- Wishlist -->
+                    <li  class="nav__mobile__link-container">
+                        <a href="" class="nav__mobile__link">Wishlist</a>
+                    </li>
+                    <!-- Palmmie Lady -->
+                    <li class="nav__mobile__link-container">
+                        <a href="" class="nav__mobile__link">Palmmie Lady</a>
+                    </li>
+                    <!-- Log in  -->
+                    <li class="nav__mobile__link-container">
+                        <a href="" class="nav__mobile__link">Log in</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <!-- Content -->
